@@ -23,7 +23,6 @@ while (True):
 	else:
 		GPIO.output(relay, GPIO.HIGH)
 
-
 	while (done == False):
 		time.sleep(20)
 
