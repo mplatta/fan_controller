@@ -1,7 +1,7 @@
 from socket import *
 import time
-import RPi.GPIO as GPIO ## Import GPIO Library
-import time ## Import 'time' library. Allows us to use 'sleep'
+import RPi.GPIO as GPIO
+import time
 
 relay = 12
 
@@ -23,7 +23,6 @@ while (True):
 		GPIO.output(relay, GPIO.LOW)
 		done = False
 	else:
-		#print('nie weszlo')
 		GPIO.output(relay, GPIO.HIGH)
 
 
@@ -39,7 +38,6 @@ while (True):
 		if (temp <= 35000):
 			done = True
 
-	#print('wyszlo')
 	GPIO.output(relay, GPIO.HIGH)
 
 	time.sleep(60)
