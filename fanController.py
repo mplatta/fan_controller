@@ -12,9 +12,7 @@ while (True):
 	done = True;
 
 	file = open('/sys/class/thermal/thermal_zone0/temp', 'r')
-
 	temp = int(file.readline())
-
 	file.close()
 
 	#print(temp)
